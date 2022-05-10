@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, TextInput } from "react-native";
 
@@ -15,11 +16,9 @@ import ListItem from "./app/components/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/components/AppTextInput";
+import AppPicker from "./app/components/AppPicker";
+import LoginScreen from "./app/screens/LoginScreen";
 
 export default function App() {
-  return (
-    <Screen>
-      <AppTextInput icon="mail" placeholder="User" />
-    </Screen>
-  );
+  return <LoginScreen />;
 }
